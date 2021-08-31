@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 836da5b04bbd23b43a799fafdb90b94c, type: 3}
+  m_Name: STG-1
+  m_EditorClassIdentifier: 
+  _data:
+    droneName: STG-1
+    currentLevel: 0
+    droneBehaviourSO: {fileID: 11400000, guid: 4a7cf9de2e3b8234fb4b43e6f6354807, type: 2}
+    PowerUPs: []
+    levels:
+    - energyCost: 35
+      health: 100
+      maxSpeed: 3
+      fireRate: 3
+      damagePerHit: 30
+      damageOnDeath: 0
+      enemyDetectionRadius: 1.5
+      ammo: {fileID: 11400000, guid: a5a18e0dda57dcb4c874e5eb79297d66, type: 2}
+      droneObject: {fileID: 1883019902606728, guid: 3a4cdad4b75b5344eb3a3b6d07e0cb85, type: 3}
+      droneTrail: {fileID: 3041748491912533486, guid: 1e192e0d9e6917d4cace7e056662b6bf, type: 3}
+      droneMuzzleFlashPrefab: {fileID: 0}
+      droneObjectScaleOverride: {x: 0.08, y: 0.08, z: 0.08}

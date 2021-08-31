@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 836da5b04bbd23b43a799fafdb90b94c, type: 3}
+  m_Name: SLW-1
+  m_EditorClassIdentifier: 
+  _data:
+    droneName: SLW-1
+    currentLevel: 0
+    droneBehaviourSO: {fileID: 11400000, guid: 4a7cf9de2e3b8234fb4b43e6f6354807, type: 2}
+    PowerUPs:
+    - {fileID: 11400000, guid: 18337279720c02445af2d51a0514721a, type: 2}
+    levels:
+    - energyCost: 80
+      health: 100
+      maxSpeed: 3
+      fireRate: 1
+      damagePerHit: 10
+      damageOnDeath: 0
+      enemyDetectionRadius: 5
+      ammo: {fileID: 11400000, guid: a5a18e0dda57dcb4c874e5eb79297d66, type: 2}
+      droneObject: {fileID: 1029753612667854, guid: 79035093c9587c246b3bb29ffc5838a4, type: 3}
+      droneTrail: {fileID: 3041748491912533486, guid: 1e192e0d9e6917d4cace7e056662b6bf, type: 3}
+      droneMuzzleFlashPrefab: {fileID: 0}
+      droneObjectScaleOverride: {x: 0.04, y: 0.04, z: 0.04}
