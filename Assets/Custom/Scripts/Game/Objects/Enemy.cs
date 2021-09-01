@@ -30,7 +30,7 @@ public class Enemy : NotificationPublisher, IHasHealth , IHasPowerUPs
         this.ApplyEnemyData();
 
         //Merge offgame powerups to current powerup list
-        foreach (BasePowerUP item in enemyActualData.powerUPs.Select(x => (Instantiate(x).PowerUP)))
+        foreach (BasePowerUP item in enemyActualData.PowerUPs.Select(x => (Instantiate(x).PowerUP)))
         {
             this.PowerUPs.Add(item);
         }

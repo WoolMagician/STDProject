@@ -107,7 +107,7 @@ public class Drone : MonoBehaviour, IHasPowerUPs
                 behaviour = droneActualData.droneBehaviourSO.Behaviour;
 
                 //Merge offgame powerups to current powerup list
-                foreach (BasePowerUP item in droneActualData.powerUPs.Select(x => (Instantiate(x).PowerUP)))
+                foreach (BasePowerUP item in droneActualData.PowerUPs.Select(x => (Instantiate(x).PowerUP)))
                 {
                     this.PowerUPs.Add(item);
                 }               

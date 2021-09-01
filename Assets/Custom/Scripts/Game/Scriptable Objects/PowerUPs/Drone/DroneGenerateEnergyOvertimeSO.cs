@@ -15,9 +15,7 @@ public class DroneGenerateEnergyOvertimeSO : PowerUPSO
 public class DroneGenerateEnergyOvertime : BasePowerUP
 {
     public int energyQuantity = 1;
-    public float generationCooldown = 5f;
-
-    [System.NonSerialized]
+    public float generationCooldown = 5f;    
     private bool energyGenCooldown = false;
 
     public override void ApplyPowerUP(IData data, IHasPowerUPs poweredUpObject)
