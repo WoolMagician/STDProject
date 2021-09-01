@@ -24,6 +24,18 @@ public class Enemy : NotificationPublisher, IHasHealth , IHasPowerUPs
 
     public List<IPowerUP> PowerUPs { get; set; } = new List<IPowerUP>();
 
+    private void Start()
+    {
+        //Apply enemy data
+        this.ApplyEnemyData();
+
+        //Merge offgame powerups to current powerup list
+        foreach (BasePowerUP item in enemyActualData.powerUPs.Select(x => (Instantiate(x).PowerUP)))
+        {
+            this.PowerUPs.Add(item);
+        }
+    }
+
     private void Update()
     {
         //Apply enemy data

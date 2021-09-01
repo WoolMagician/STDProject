@@ -7,7 +7,8 @@ public class DroneGenerateEnergyOvertimeSO : PowerUPSO
 {
     [SerializeField]
     private DroneGenerateEnergyOvertime _powerup = new DroneGenerateEnergyOvertime();
-    public override BasePowerUP PowerUP { get => new DroneGenerateEnergyOvertime() { energyQuantity = _powerup.energyQuantity, generationCooldown = _powerup.generationCooldown }; }
+
+    public override BasePowerUP PowerUP { get => _powerup; }
 }
 
 [System.Serializable]

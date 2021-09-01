@@ -5,7 +5,8 @@ public class DroneLockOnEnemySO : PowerUPSO
 {
     [SerializeField]
     private DroneLockOnEnemy _powerup = new DroneLockOnEnemy();
-    public override BasePowerUP PowerUP { get => new DroneLockOnEnemy() { speedMultiplier = _powerup.speedMultiplier }; }
+
+    public override BasePowerUP PowerUP { get => _powerup; }
 }
 
 [System.Serializable]

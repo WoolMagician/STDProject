@@ -16,14 +16,14 @@ MonoBehaviour:
     droneName: SLW-1
     currentLevel: 0
     droneBehaviourSO: {fileID: 11400000, guid: 4a7cf9de2e3b8234fb4b43e6f6354807, type: 2}
-    PowerUPs:
+    powerUPs:
     - {fileID: 11400000, guid: 18337279720c02445af2d51a0514721a, type: 2}
     levels:
     - energyCost: 80
       health: 100
       maxSpeed: 3
       fireRate: 1
-      damagePerHit: 10
+      damagePerHit: 0
       damageOnDeath: 0
       enemyDetectionRadius: 5
       ammo: {fileID: 11400000, guid: a5a18e0dda57dcb4c874e5eb79297d66, type: 2}

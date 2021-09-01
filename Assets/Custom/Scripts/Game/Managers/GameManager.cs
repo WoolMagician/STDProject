@@ -21,7 +21,7 @@ public class GameManager : Singleton<GameManager> , INotificationObserver
         InputEventManager.Instance.OnEnemyClick += Instance.HandleEnemyClick;
         InputEventManager.Instance.OnPlanetClick += Instance.HandlePlanetClick;
 
-        simulationData.mineralAcquired = 10;
+        simulationData.mineralAcquired = 100;
     }
 
     void Update()
@@ -116,14 +116,16 @@ public class GameManager : Singleton<GameManager> , INotificationObserver
         {
             if(drone != null)
             {
+                PowerUPSO newPUInstance = (PowerUPSO)Instantiate(loot.lootData.lootSO);
+
                 //Add on hit effect if is not applied yet
                 if (!drone.PowerUPs.ContainsOfType(loot.lootData.lootSO))
                 {
-                    drone.PowerUPs.Add(((PowerUPSO)loot.lootData.lootSO).PowerUP);
+                    drone.PowerUPs.Add(newPUInstance.PowerUP);
                 }
                 else
                 {
-                    ((BasePowerUP)drone.PowerUPs.GetOfType(loot.lootData.lootSO)).StackDuration();
+                    ((BasePowerUP)drone.PowerUPs.GetOfType(newPUInstance)).TriggerMultidrop();
                 }
             }
         }

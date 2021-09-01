@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public interface IPowerUP
+public interface IPowerUP : IData
 {
     void ApplyPowerUP(IData data, IHasPowerUPs poweredUpObject);
 }

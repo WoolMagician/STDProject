@@ -5,7 +5,8 @@ public class EnemySpeedModifierSO : PowerUPSO
 {
     [SerializeField]
     private EnemySpeedModifier _powerup = new EnemySpeedModifier();
-    public override BasePowerUP PowerUP { get => new EnemySpeedModifier() { speedMultiplier = _powerup.speedMultiplier }; }
+
+    public override BasePowerUP PowerUP { get => _powerup; }
 }
 
 [System.Serializable]

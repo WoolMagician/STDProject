@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: DroneGenerateEnergyOvertime
   m_EditorClassIdentifier: 
   _powerup:
+    multidropBehaviour: 1
     duration: 0
     energyQuantity: 1
     generationCooldown: 3

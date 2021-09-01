@@ -13,5 +13,6 @@ MonoBehaviour:
   m_Name: DroneLockOnEnemyPU
   m_EditorClassIdentifier: 
   _powerup:
+    multidropBehaviour: 1
     duration: 0
     speedMultiplier: 0.5

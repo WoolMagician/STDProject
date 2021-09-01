@@ -19,7 +19,7 @@ public class DroneData : BaseData
     public DroneBehaviourSO droneBehaviourSO;
 
     [SerializeReference]
-    public List<PowerUPSO> PowerUPs;
+    public List<PowerUPSO> powerUPs;
 
     [SerializeField]
     public DroneLevelData[] levels = new DroneLevelData[3];
@@ -33,7 +33,7 @@ public class DroneData : BaseData
         };
 
         copiedDroneData.levels = new DroneLevelData[levels.Length];
-        copiedDroneData.PowerUPs = this.PowerUPs;
+        copiedDroneData.powerUPs = this.powerUPs;
 
         for (int i = 0; i < levels.Length; i++)
         {

@@ -16,7 +16,8 @@ MonoBehaviour:
     droneName: BFR-1
     currentLevel: 0
     droneBehaviourSO: {fileID: 11400000, guid: 30852cb4644be974689cb7c0ce78358b, type: 2}
-    PowerUPs: []
+    powerUPs:
+    - {fileID: 11400000, guid: 8503bc6dde7f98e44a190430ad103668, type: 2}
     levels:
     - energyCost: 10
       health: 0

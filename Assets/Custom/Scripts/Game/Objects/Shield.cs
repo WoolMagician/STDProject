@@ -87,7 +87,12 @@ public class Shield : MonoBehaviour
         }
         initialized = true;
 
+    }
+
+    private void Start()
+    {
         this.SetShieldData(_shieldData);
+
     }
 
     void Update()

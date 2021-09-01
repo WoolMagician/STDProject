@@ -65,7 +65,7 @@ public class Drone : MonoBehaviour, IHasPowerUPs
 
     private void Update()
     {
-        //Get all enemies withing patrol bounds
+        //Get all enemies within patrol bounds
         this.GetEnemiesWithinRange();
 
         //Apply drone level data
@@ -106,16 +106,17 @@ public class Drone : MonoBehaviour, IHasPowerUPs
                 }
                 behaviour = droneActualData.droneBehaviourSO.Behaviour;
 
-                //Nonfunge
-                foreach (BasePowerUP item in droneActualData.PowerUPs.Select(x => x.PowerUP))
+                //Merge offgame powerups to current powerup list
+                foreach (BasePowerUP item in droneActualData.powerUPs.Select(x => (Instantiate(x).PowerUP)))
                 {
-                    this.PowerUPs.Add((BasePowerUP)Activator.CreateInstance(item.GetType()));
+                    this.PowerUPs.Add(item);
                 }               
             }
         }
-        catch
+        catch (Exception e)
         {
             Debug.LogWarning("Drone initialization failed.");
+            Debug.LogException(e);
             return false;
         }
         return true;

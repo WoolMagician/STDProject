@@ -8,6 +8,8 @@ public class EnemyData : BaseData
     public float speed = 1f;
     public float maxHealth = 30f;
     public EnemyBehaviourSO enemyBehaviourSO;
+    [SerializeReference]
+    public List<PowerUPSO> powerUPs;
 
     public LootTableSO lootTableSO;
     public GameObject[] enemyObjectVariants;
@@ -32,7 +34,8 @@ public class EnemyData : BaseData
             enemyDieParticles = this.enemyDieParticles,
             enemyDieParticlesScaleOverride = this.enemyDieParticlesScaleOverride,
             enemyObjectScaleOverride = this.enemyObjectScaleOverride,
-            enemyTrailScaleOverride = this.enemyTrailScaleOverride
+            enemyTrailScaleOverride = this.enemyTrailScaleOverride,
+            powerUPs = this.powerUPs
         };
     }
 

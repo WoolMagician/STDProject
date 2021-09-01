@@ -3,10 +3,18 @@ using System.Collections.Generic;
 using UnityEngine;
 using System;
 
+public enum PUPMultidropBehaviour
+{
+    None,
+    StackDuration,
+    ResetDuration
+}
+
 [Serializable]
-public abstract class BasePowerUP : IPowerUP
+public abstract class BasePowerUP : IPowerUP, IData
 {
 
+    public PUPMultidropBehaviour multidropBehaviour;
     public float duration = 0f;
 
     protected bool countDownStarted = false;
@@ -24,12 +32,25 @@ public abstract class BasePowerUP : IPowerUP
         }
     }
 
-    public void StackDuration()
+    public void TriggerMultidrop()
+    {
+        switch (multidropBehaviour)
+        {
+            case PUPMultidropBehaviour.StackDuration:
+                StackDuration();
+                break;
+            case PUPMultidropBehaviour.ResetDuration:
+                ResetDuration();
+                break;
+        }
+    }
+
+    private void StackDuration()
     {
         currentCountdownValue += duration;
     }
 
-    public void ResetDuration()
+    private void ResetDuration()
     {
         currentCountdownValue = duration;
     }
@@ -60,5 +81,5 @@ public abstract class BasePowerUP : IPowerUP
         }
     }
 
-    
+
 }

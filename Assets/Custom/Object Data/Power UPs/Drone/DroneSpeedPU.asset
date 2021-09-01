@@ -13,5 +13,6 @@ MonoBehaviour:
   m_Name: DroneSpeedPU
   m_EditorClassIdentifier: 
   _powerup:
+    multidropBehaviour: 1
     duration: 5
     speedMultiplier: 2

@@ -13,5 +13,6 @@ MonoBehaviour:
   m_Name: EnemySpeedSlowOnHitPU
   m_EditorClassIdentifier: 
   _powerup:
-    duration: 0
+    multidropBehaviour: 1
+    duration: 1
     speedMultiplier: 0.5

@@ -3,15 +3,17 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 
+[System.Serializable]
 [CreateAssetMenu(fileName = "DroneApplyOnHitEffect", menuName = "Scriptable Objects/Power UPs/DroneApplyOnHitEffect")]
 public class DroneApplyOnHitEffectSO : PowerUPSO
 {
     [SerializeField]
     private DroneApplyOnHitEffect _powerup = new DroneApplyOnHitEffect();
-    public override BasePowerUP PowerUP { get => new DroneApplyOnHitEffect() { onHitEffectSO = _powerup.onHitEffectSO }; }
+
+    public override BasePowerUP PowerUP { get => _powerup; }
 }
 
-[System.Serializable]
+[Serializable]
 public class DroneApplyOnHitEffect : BasePowerUP, INotificationObserver
 {
     [SerializeField]
@@ -54,14 +56,16 @@ public class DroneApplyOnHitEffect : BasePowerUP, INotificationObserver
     {
         if (hitArgs.hitter.GetComponent<Drone>() == referenceDrone)
         {
+            PowerUPSO newPUInstance = UnityEngine.Object.Instantiate(onHitEffectSO);
+
             //Add on hit effect if is not applied yet
-            if (!hitArgs.enemy.PowerUPs.ContainsOfType(onHitEffectSO.PowerUP))
+            if (!hitArgs.enemy.PowerUPs.ContainsOfType(newPUInstance.PowerUP))
             {
-                hitArgs.enemy.PowerUPs.Add(((PowerUPSO)onHitEffectSO).PowerUP);
+                hitArgs.enemy.PowerUPs.Add(newPUInstance.PowerUP);
             }
             else
             {
-                ((BasePowerUP)hitArgs.enemy.PowerUPs.GetOfType(onHitEffectSO.PowerUP)).StackDuration();
+                ((BasePowerUP)hitArgs.enemy.PowerUPs.GetOfType(newPUInstance.PowerUP)).TriggerMultidrop();
             }
         }
     }

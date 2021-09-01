@@ -5,7 +5,8 @@ public class DroneSpeedSO : PowerUPSO
 {
     [SerializeField]
     private DroneSpeed _powerup = new DroneSpeed();
-    public override BasePowerUP PowerUP { get => new DroneSpeed() { speedMultiplier = _powerup.speedMultiplier }; }
+
+    public override BasePowerUP PowerUP { get => _powerup; }
 }
 
 [System.Serializable]
