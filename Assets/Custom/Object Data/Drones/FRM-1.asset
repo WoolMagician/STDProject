@@ -19,9 +19,9 @@ MonoBehaviour:
     PowerUPs:
     - {fileID: 11400000, guid: 8503bc6dde7f98e44a190430ad103668, type: 2}
     levels:
-    - energyCost: 10
+    - energyCost: 5
       health: 0
-      maxSpeed: 2
+      maxSpeed: 1
       fireRate: 0
       damagePerHit: 0
       damageOnDeath: 0

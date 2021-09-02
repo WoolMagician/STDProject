@@ -23,7 +23,7 @@ public class OrbitFactory : Factory<OrbitFactory, OrbitSO, Orbit>
         }
         Orbit orbitComp;
         OrbitData orbitData = (OrbitData)data;
-        GameObject newOrbit = Instantiate(orbitPrefab, this.transform.position, Quaternion.Euler(Random.Range(-30, 30), 0, Random.Range(-30, 30)), factoryGroupingObject.transform);
+        GameObject newOrbit = Instantiate(orbitPrefab, this.transform.position, Quaternion.Euler(Random.Range(-5, 5), 0, Random.Range(-5, 5)), factoryGroupingObject.transform);
         newOrbit.name = string.Format("Orbit{0}", _createdObjects.Count);
         newOrbit.transform.localScale = new Vector3(orbitData.radius, orbitData.radius, orbitData.radius);
         orbitComp = newOrbit.GetComponent<Orbit>();

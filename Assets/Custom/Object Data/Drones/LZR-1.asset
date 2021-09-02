@@ -18,11 +18,11 @@ MonoBehaviour:
     droneBehaviourSO: {fileID: 11400000, guid: 4a7cf9de2e3b8234fb4b43e6f6354807, type: 2}
     PowerUPs: []
     levels:
-    - energyCost: 30
+    - energyCost: 15
       health: 100
       maxSpeed: 3
       fireRate: 1
-      damagePerHit: 10
+      damagePerHit: 5
       damageOnDeath: 0
       enemyDetectionRadius: 5
       ammo: {fileID: 11400000, guid: a5a18e0dda57dcb4c874e5eb79297d66, type: 2}

@@ -15,5 +15,5 @@ MonoBehaviour:
   _powerup:
     multidropBehaviour: 1
     duration: 0
-    energyQuantity: 1
-    generationCooldown: 3
+    energyQuantity: 5
+    generationCooldown: 10
