@@ -14,5 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _powerup:
     multidropBehaviour: 1
-    duration: 5
+    duration: 1
     speedMultiplier: 2

@@ -16,6 +16,7 @@ public class EnemyHitNotificationEventArgs : NotificationEventArgs
         this.publisher = enemy.gameObject;
         this.enemy = enemy;
         this.hitter = hitter;
+
     }
 }
 
