@@ -19,15 +19,15 @@ MonoBehaviour:
     PowerUPs:
     - {fileID: 11400000, guid: 18337279720c02445af2d51a0514721a, type: 2}
     levels:
-    - energyCost: 80
+    - energyCost: 12
       health: 100
-      maxSpeed: 3
+      maxSpeed: 2
       fireRate: 1
-      damagePerHit: 0
+      damagePerHit: 1
       damageOnDeath: 0
       enemyDetectionRadius: 5
       ammo: {fileID: 11400000, guid: a5a18e0dda57dcb4c874e5eb79297d66, type: 2}
       droneObject: {fileID: 1029753612667854, guid: 79035093c9587c246b3bb29ffc5838a4, type: 3}
       droneTrail: {fileID: 3041748491912533486, guid: 1e192e0d9e6917d4cace7e056662b6bf, type: 3}
-      droneMuzzleFlashPrefab: {fileID: 0}
+      droneMuzzleFlashPrefab: {fileID: 7724733162753971875, guid: 447d31ec29247794caf8f8756b2ec54d, type: 3}
       droneObjectScaleOverride: {x: 0.04, y: 0.04, z: 0.04}

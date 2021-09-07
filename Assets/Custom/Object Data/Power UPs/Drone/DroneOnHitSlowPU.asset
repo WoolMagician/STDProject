@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: DroneOnHitSlowPU
   m_EditorClassIdentifier: 
   _powerup:
-    multidropBehaviour: 1
+    multidropBehaviour: 0
     duration: 0
     onHitEffectSO: {fileID: 11400000, guid: 35234692ec5c2394a8d5dcd1597fe363, type: 2}
