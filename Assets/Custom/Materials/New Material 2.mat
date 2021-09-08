@@ -20,7 +20,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: New Material
+  m_Name: New Material 2
   m_Shader: {fileID: -6465566751694194690, guid: d8ebced7cdf22144497e16e3063b6baf, type: 3}
   m_ShaderKeywords: 
   m_LightmapFlags: 2
@@ -46,10 +46,10 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Floats:
     - Vector1_6b1083a605bd42e0864df3a312f10a38: 20
-    - Vector1_e4b053cfcb164dc681909431ebcbb2b7: 4
+    - Vector1_e4b053cfcb164dc681909431ebcbb2b7: 1
     - Vector1_fd2466e929de4bdf9e456f4a5aa8ce90: 0
     - _DissolveValue: 0
     m_Colors:
-    - Color_7d2b1c29cb3a488e9ed1703b1fc65a96: {r: 0, g: 5.298729, b: 1012.0572, a: 1}
-    - Color_be93f36664d0412b95ede39048893093: {r: 1, g: 1, b: 1, a: 0}
+    - Color_7d2b1c29cb3a488e9ed1703b1fc65a96: {r: 0, g: 4.376465, b: 1024, a: 1}
+    - Color_be93f36664d0412b95ede39048893093: {r: 0, g: 0.93725497, b: 0.9843138, a: 1}
   m_BuildTextureStacks: []
